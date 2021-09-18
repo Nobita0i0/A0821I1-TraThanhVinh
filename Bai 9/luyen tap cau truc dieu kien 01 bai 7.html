@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính cước điện thoại</title>
+</head>
+<body>
+<!Phí thuê bao bắt buộc là 25 nghìn.
+600 đồng cho mỗi gọi của 50 phút đầu tiên.
+400 đồng cho mỗi phút gọi của 150 phút tiếp theo.!>
+<script>
+    let a = parseInt(prompt('tổng số phút đã gọi', ''))
+    if (a <= 50) {
+        alert(600 * a + 25000 + ' là số tiền cước đã gọi')
+    } else {
+        alert((a - 50) *400 + 30000 + 25000 + ' là số tiền cước đã gọi')
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính hoa hồng theo doanh số bán hàng</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt('nhập doanh số bán hàng', ''));
+    let b = a * 0.05;
+    let c= (a - 100) * 0.1
+    if (a >= 80 && a < 100) {
+        alert(b + ' là hoa hồng đạt được' )
+    } else if (a >= 100) {
+        alert (c + 5 + ' là hoa hồng đạt được');
+    } else {
+        alert('doanh số không đạt để tính hoa hồng');
+    }
+</script>
+</body>
+</html>

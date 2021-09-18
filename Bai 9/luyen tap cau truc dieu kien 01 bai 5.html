@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xếp hạng học lực</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt('nhập điểm bài kiểm tra', ''));
+    let b = parseInt(prompt('nhập điểm điểm thi giữa kỳ', ''));
+    let c = parseInt(prompt('nhập điểm thi cuối kỳ', ''));
+let avarage = ((a + b * 2 + c * 3) / 6);
+    if (avarage >= 9) {
+        alert('Xuất sắc')
+    } else if (avarage >= 8) {
+        alert('Giỏi')
+    } else if (avarage >=7) {
+        alert('Khá')
+    } else {
+        alert('Trung bình hoặc yếu')
+    }
+</script>
+</body>
+</html>

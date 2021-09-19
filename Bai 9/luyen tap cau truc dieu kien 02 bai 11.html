@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thuế thu nhập cá nhân</title>
+</head>
+<body>
+<!5 - 10 triệu       5%
+10 – 18 triệu 	10% - 0.25 triệu
+18 – 32 triệu 	20% - 1.65 triệu
+32 –    triệu 	25% - 3.23 triệu!>
+<script>
+    let a = parseInt(prompt('Nhập số tiền lương hàng tháng (tính bằng triệu)'));
+if (a < 10) {
+    alert(a * 0.05 + (' là tiền thuế phải nộp'))
+} else if (a < 18) {
+    alert(a * 0.1 - 0.25 + (' là tiền thuế phải nộp'))
+} else if (a < 32) {
+    alert(a * 0.2 - 1.65 + (' là tiền thuế phải nộp'))
+} else {
+    alert(a * 0.25 - 3.23 + (' là tiền thuế phải nộp'))
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In tam giác vuông</title>
+</head>
+<body>
+<script>
+    for (let row = 1; row <= 5; row++) {
+        for (let col = 1; col <= 5; col++ ) {
+            if (col <= row) {
+                document.write("*");
+            } else {
+                document.write("&ensp;");
+            }
+        }
+        document.write("<br/>");
+        }
+</script>
+<br/>
+<script>
+    for (let row = 5; row >= 1; row--) {
+        for (let col = 1; col <= 5; col++) {
+            if (col <= row) {
+                document.write("*");
+            } else {
+                document.write("&ensp;");
+            }
+        }
+        document.write("<br/>");
+    }
+</script>
+<br/>
+<script>
+    for (let row = 5; row >= 1; row--) {
+        for (let col = 1; col <= 5; col++) {
+            if (col >= row) {
+                document.write("*");
+            } else {
+                document.write("&ensp;");
+            }
+        }
+        document.write("<br/>");
+    }
+</script>
+<br/>
+<script>
+    for (let row = 1; row <= 5; row++) {
+        for (let col = 1; col <= 5; col++ ) {
+            if (col >= row) {
+                document.write("*");
+            } else {
+                document.write("&ensp;");
+            }
+        }
+        document.write("<br/>");
+    }
+</script>
+</body>
+</html>

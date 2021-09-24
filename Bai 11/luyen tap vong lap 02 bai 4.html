@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hình chữ nhật</title>
+</head>
+<body>
+<script>
+    for (let row = 1; row <= 7; row++) {
+        for (let col = 1; col <= 20; col++ ) {
+            if (col === 1 || col === 20 || row === 7 || row === 1) {
+                document.write("*")
+            } else {
+                document.write("&ensp;")
+            }
+        }
+        document.write("<br/>")
+    }
+
+</script>
+</body>
+</html>

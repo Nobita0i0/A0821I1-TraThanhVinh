@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In dãy Finonaci</title>
+</head>
+<body>
+<script>
+    let n1 = 0, n2 = 1, nextNum, i;
+    let num = parseInt(prompt('nhập số vào '));
+    for (i = 1; i <= num; i++) {
+        document.write(n1 + "<br/>");
+        nextNum = n1 + n2
+        n1 = n2
+        n2 = nextNum
+    }
+</script>
+</body>
+</html>

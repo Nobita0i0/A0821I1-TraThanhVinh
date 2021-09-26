@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập mảng 01 bài 2</title>
+</head>
+<body>
+<script>
+    let int = [9, 8, 10, 57, 63, 16, 2, 76, 45, 91];
+    let max = int[0];
+    let index = 0;
+    for (let i = 1; i < int.length; i++) {
+        if (int[i] > max) {
+            max = int[i];
+            index = i;
+        }
+    }
+    document.write("Giá trị lớn nhất " + max + " tại vị trí " + index);
+</script>
+</body>
+</html>

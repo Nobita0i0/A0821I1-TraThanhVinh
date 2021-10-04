@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyện tập mảng 01 bài 7</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    do {
+        size = parseInt(prompt("Nhập kích thước của mảng:"))
+    } while (size > 10)
+    for (let i = 0; i <= size; i++) {
+arr[i] = parseInt(prompt("Nhập giá trị tại vị trí: " + i))
+    }
+    console.log(arr);
+    let v = parseInt(prompt("Nhập phân tử muốn tìm V: "));
+    for (let i = 0; i <= size; i++) {
+        if (v === arr[i]) {
+            for (let j = 0; j < size - 1; j++) {
+                arr[j] = arr[j + 1]
+            }
+        }
+    }
+arr[arr.length - 1] = 0;
+    document.write(arr)
+</script>
+</body>
+</html>

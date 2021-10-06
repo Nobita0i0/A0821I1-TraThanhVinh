@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi giữa feet và meters</title>
+</head>
+<body>
+<h2>Length Converter</h2>
+<p>Nhập giá trị của Feet để chuyển đổi sang Meters:</p>
+
+<p>
+    <label>Feet</label>
+    <input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+</p>
+<p>Meters: <span id="outputMeters"></span></p>
+
+<script>
+    function LengthConverter(valNum) {
+        document.getElementById("outputMeters").innerHTML=valNum/3.2808;
+    }
+</script>
+<br/>
+<p>Nhập giá trị của Meters để chuyển đổi sang Feet:</p>
+
+<p>
+    <label>Meters</label>
+    <input id="inputMeters" type="number" placeholder="Meters" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+</p>
+<p>Feet: <span id="outputFeet"></span></p>
+
+<script>
+    function LengthConverter(valNum) {
+        document.getElementById("outputFeet").innerHTML=valNum*3.2808;
+    }
+</script>
+</body>
+</html>

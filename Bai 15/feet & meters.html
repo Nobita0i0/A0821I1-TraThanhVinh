@@ -24,12 +24,12 @@
 
 <p>
     <label>Meters</label>
-    <input id="inputMeters" type="number" placeholder="Meters" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+    <input id="inputMeters" type="number" placeholder="Meters" oninput="LengthConverter1(this.value)" onchange="LengthConverter(this.value)">
 </p>
 <p>Feet: <span id="outputFeet"></span></p>
 
 <script>
-    function LengthConverter(valNum) {
+    function LengthConverter1(valNum) {
         document.getElementById("outputFeet").innerHTML=valNum*3.2808;
     }
 </script>

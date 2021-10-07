@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hàm 01 bài 5</title>
+</head>
+<body>
+<script>
+    let ngoiSao = ["Polaris","Aldebaran", "Deneb", "Vega", "Altair", "Dubhe","Regulus"];
+    let chomSao = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major" , "Leo"];
+    let x = prompt("nhập tên ngôi sao :");
+
+    function addChomSao(x) {
+        let dk = false;
+        for (let i = 0; i < ngoiSao.length; i++) {
+            if (x === ngoiSao[i]); {
+                document.write(chomSao[i]);
+                dk == true;
+            }
+        }
+        if (dk == false) {
+            document.write("Không tìm thấy chòm sao")
+        }
+    }
+    addChomSao(x)
+</script>
+</body>
+</html>

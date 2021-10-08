@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hàm 02 bài 3</title>
+</head>
+<body>
+<script>
+    function giaiThua(n) {
+        if (n == 0) return 1;
+        else return n * giaiThua(n - 1);
+    }
+let n;
+    do {
+        n = prompt("Nhập vào một số nguyên dương: ");
+    } while (n == 0)
+    alert(n + " giai thừa là " + giaiThua(n));
+</script>
+</body>
+</html>

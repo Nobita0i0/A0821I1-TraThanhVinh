@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp mô tả hình chữ nhật</title>
+
+</head>
+<body>
+
+<canvas id="myCanvas" width="400" height="400" style="border:1px solid green;"></canvas>
+<p id="rs"></p>
+<script>
+    class Rectangle {
+        constructor(length, width) {
+            this.length = length;
+            this.width = width;
+        }
+
+        getLength() {
+            return this.length;
+        }
+
+        setLength(value) {
+            this.length = value;
+        }
+
+        getWidth() {
+            return this.width;
+        }
+
+        setWidth(value) {
+            this.width = value;
+        }
+
+        dientich() {
+            return this.length * this.width;
+        }
+
+        chuvi() {
+            return (this.length + this.width) * 2;
+        }
+
+        changeValue(l, w) {
+            this.setLength(l);
+            this.setWidth(w)
+            this.draw();
+            document.getElementById("rs").innerText = "dien tich " + this.dientich() + " chu vi :" + this.chuvi();
+        }
+
+        draw() {
+            var ctx = document.getElementById("myCanvas").getContext("2d");
+            ctx.fillRect(50, 100, this.length, this.width);
+            document.getElementById("rs").innerText = "Diện tích là: " + this.dientich() + "Chu vi là : " + this.chuvi();;
+        }
+    }
+    let r = new Rectangle
+    r.draw();
+    r.changeValue(300, 150);
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng quản lý sản phẩm</title>
+</head>
+<body>
+<h2>Add New Product</h2>
+<br/>
+<input type="text" placeholder="New Product" id="input">
+<button type="button" onclick="input()">Add</button>
+</br>
+<h2>Display all product</h2>
+<a>PRODUCT NAME <a id="size" style="padding-left: 100px; color: darkred"></a></a>
+<p id="display"></p>
+</body>
+<script>
+    let product = ["Sony", "Samsung", "Nokia", "Xiaomi", "Apple", "Vertu", "Pixel"]
+    function display() {
+        let table = "<table CELLSPACING='0px'  cellpadding='20px'>"
+        document.getElementById("size").innerText = product.length + " product";
+
+        for (let i = 0; i < product.length; i++) {
+            table += "<tr><td><h3>" + product[i] + "</h3></td>"
+            table += "<td><button type='button' style='background-color: darkcyan' onclick='Edit("+i+")'>Edit</button></td>"
+            table += "<td><button type='button' style='background-color: darkcyan' onclick='Delete("+i+")'>Delete</button></td></tr>"
+        }
+        table += "</table>";
+        document.getElementById("display").innerHTML = table;
+    }
+    display();
+    function input(){
+        let product=document.getElementById("input").value;
+        if(product==""){
+            alert("PLEASE ENTER NEW PRODUCT !!")
+        }else {
+            product.push(document.getElementById("input").value);
+            document.getElementById("input").value = "";
+            display();
+        }
+    }
+    function Edit(i){
+        let name=prompt("CHANGE NAME'S PRODUCT :");
+        while(name==""){
+            name=prompt("DO NOT EMPTY. PLEASE ENTER NAME'S PRODUCT :")
+        }
+        product[i]=name;
+        display();
+    }
+    function Delete(i){
+        let check= confirm("DO YOU WANT DELETE "+product[i]+" ?")
+        if(check){
+            product.splice(i,1);
+            display();
+        }
+    }
+</script>
+</html>

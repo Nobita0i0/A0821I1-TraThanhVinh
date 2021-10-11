@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mô tả nhiệt độ</title>
+</head>
+<body>
+<script>
+class Temperature {
+constructor(cencius) {
+this.cencius = cencius;
+}
+
+getCencius() {
+return this.cencius;
+}
+
+setCencius(value) {
+this.cencius = value;
+}
+
+changeF() {
+return parseFloat(1.8 * this.getCencius() + 32);
+}
+
+changeK() {
+return parseFloat(273.15 + this.getCencius());
+}
+}
+let t= new Temperature(25);
+document.write("Nhiệt độ " +t.getCencius() + " °C sang độ F là : "+t.changeF()+"<br>");
+document.write("Nhiệt độ " +t.getCencius() + " °C sang độ Kenvin là : "+t.changeK());
+</script>
+</body>
+</html>

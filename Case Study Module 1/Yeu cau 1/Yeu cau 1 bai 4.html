@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Yêu cầu 1 bài 3</title>
+    <title>Yêu cầu 1 bài 4</title>
 </head>
 <body>
 <script>
@@ -13,10 +13,19 @@
         }
 
         for (let k = 0; k <= i - 1; k++) {
-            document.write("*");
+            if (k === 0 || k === i || i === 5 - 1) {
+                document.write("*");
+            } else {
+                document.write("&nbsp&nbsp");
+            }
         }
         for (let h = 0; h <= i; h++) {
-            document.write("*")
+            if ( h === i || i === 5 - 1) {
+                document.write("*");
+            } else {
+                document.write("&nbsp&nbsp");
+            }
+
         }
         document.write("<br>");
     }

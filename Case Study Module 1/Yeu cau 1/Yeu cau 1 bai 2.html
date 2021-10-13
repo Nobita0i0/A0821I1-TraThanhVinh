@@ -6,15 +6,16 @@
 </head>
 <body>
 <script>
-    for (let row = 1; row <= 5; row++) {
-        for (let col = 1; col <= 5; col++ ) {
-        document.write("&ensp;")
+    let chieuCao = parseInt(prompt("Nhập chiều cao tam giác: "))
+    for (let row = 1; row <= chieuCao; row++) {
+        for (let col = 1; col <= chieuCao; col++ ) {
+        document.write("&nbsp&nbsp")
         }
         for (let k = 1; k <= row; k++) {
-            if (k === 1 || k === row || row === 5) {
+            if (k === 1 || k === row || row === chieuCao) {
                 document.write("*");
             } else {
-                document.write("&ensp;");
+                document.write("&nbsp&nbsp");
             }
         }
         document.write("<br/>")

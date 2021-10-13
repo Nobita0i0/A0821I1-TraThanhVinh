@@ -6,12 +6,14 @@
 </head>
 <body>
 <script>
-    for (let row = 1; row <= 4; row++) {
-        for (let col = 1; col <= 5; col++ ) {
-            if (col === 1 || col === 5 || row === 4 || row === 1) {
+    let chieuDai = parseInt(prompt("Nhập chiều dài: "));
+    let chieuRong = parseInt(prompt("Nhập chiều rộng: "));
+    for (let row = 1; row <= chieuDai; row++) {
+        for (let col = 1; col <= chieuRong; col++ ) {
+            if (col === 1 || col === chieuRong || row === chieuRong || row === 1) {
                 document.write("*")
             } else {
-                document.write("&ensp;")
+                document.write("&nbsp&nbsp")
             }
         }
         document.write("<br/>")

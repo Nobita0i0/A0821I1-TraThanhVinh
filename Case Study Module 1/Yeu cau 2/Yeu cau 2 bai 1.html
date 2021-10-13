@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yêu cầu 2 bài 1</title>
+</head>
+<body>
+<script>
+    let salary = parseInt(prompt("Nhập số lương tính đơn vị triệu đồng: "));
+    let tax;
+    let result;
+    if (salary === 15) {
+        tax = salary * 0.2;
+        result=salary-tax;
+    }else if(7<=salary<15){
+        tax=salary*0.1;
+        result=salary-tax;
+    }else if(salary<7){
+        tax=salary*0.05;
+        result=salary-tax;
+    }
+    document.write('Thuế thu nhập cá nhân là '+ tax +' triệu' + "<br/>");
+    document.write('Số lương thực nhận sau khi trừ thuế là ' + result + ' triệu');
+</script>
+</body>
+</html>

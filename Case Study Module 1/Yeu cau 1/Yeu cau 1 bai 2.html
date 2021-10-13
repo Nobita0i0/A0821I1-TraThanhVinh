@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yêu cầu 1 bài 2</title>
+</head>
+<body>
+<script>
+    for (let row = 1; row <= 5; row++) {
+        for (let col = 1; col <= 5; col++ ) {
+        document.write("&ensp;")
+        }
+        for (let k = 1; k <= row; k++) {
+            if (k === 1 || k === row || row === 5) {
+                document.write("*");
+            } else {
+                document.write("&ensp;");
+            }
+        }
+        document.write("<br/>")
+    }
+
+</script>
+</body>
+</html>

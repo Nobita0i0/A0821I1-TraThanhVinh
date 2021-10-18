@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yêu cầu 4 bài 3</title>
+</head>
+<body>
+<script>
+    let x1=prompt("nhập vào xâu thứ 1: ");
+    let x2=prompt("nhập vào xâu thứ 2: ");
+
+    function characterCount(x1,x2){
+        let arr1 = x1.split("");
+        let arr2 = x2.split("");
+        let n=0;
+        for(let i=0; i<arr1.length; i++){
+            if(arr1.includes(arr2[i])){
+                n++;
+            }
+        }
+        return n;
+    }
+    document.write("chuỗi thứ 1 :" +x1+"<br>");
+    document.write("chuỗi thứ 2 :" +x2+"<br>");
+    document.write("số lượng phần tử giống trong 2 chuỗi là  :" + characterCount(x1,x2));
+</script>
+</body>
+</html>

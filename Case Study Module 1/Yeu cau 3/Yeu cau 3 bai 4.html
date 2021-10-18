@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yêu cầu 3 bài 4</title>
+</head>
+<body>
+<script>
+    let number = prompt("nhập số :");
+    let chu='';
+    for(let i=0;i<number.length;i++){
+        switch (number[i]){
+            case '0': chu+='không '; break;
+            case '1': chu+='một '; break;
+            case '2': chu+='hai '; break;
+            case '3': chu+='ba '; break;
+            case '4': chu+='bốn '; break;
+            case '5': chu+='năm '; break;
+            case '6': chu+='sáu '; break;
+            case '7': chu+='bảy '; break;
+            case '8': chu+='tám '; break;
+            case '9': chu+='chín '; break;
+            default :chu+number[i];
+        }
+    }
+    document.write(chu);
+</script>
+</body>
+</html>
